@@ -47,3 +47,11 @@ angular.module('chatApp', [])
 }]);
   ```
 3. Test the application to make sure it works.
+4. Now save the posts into firebase and make sure they end up there by looking at the database page.  First add the js links to public/index.html
+ ```html
+<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+ ```
+5. Then inject the firebase service into the controller
+ ```js
+ ```
