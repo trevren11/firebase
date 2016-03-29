@@ -33,7 +33,7 @@ For this tutorial we will build a simple angular chat application
 2. Now create a controller for this front end (public/javascripts/script.js)
 
   ```js
-var myApp = angular.module("myApp");
+var myApp = angular.module("myApp",[]);
 myApp.controller("chatController", ["$scope",
 function($scope) {
   $scope.chats = [];
