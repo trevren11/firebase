@@ -8,4 +8,10 @@
         user.chat = "";
       };
 
+       $scope.delete = function(user) {
+        var tmp = {name:user.name, chat:user.chat};
+        $scope.chats.delete(tmp);
+        user.chat = "";
+      };
+
     }]);

@@ -9,5 +9,12 @@ function($scope, $firebaseArray) {
 	  $scope.chats.$add(newmessage);
 	  user.chat = "";
   }
+
+  $scope.delete = function(user) {
+	  var newmessage = {from:user.name || "anonymous",body:user.chat};
+      console.log(newmessage);
+	  $scope.chats.$delete(newmessage);
+	  user.chat = "";
+  }
 }
 ]);
